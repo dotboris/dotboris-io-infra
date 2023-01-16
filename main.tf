@@ -38,3 +38,9 @@ variable "netlify_token" {
 provider "netlify" {
   token = var.netlify_token
 }
+
+variable "google_site_verification_key" {
+  type        = string
+  nullable    = true
+  description = "Key from Google Search Console used to validate site ownership"
+}
